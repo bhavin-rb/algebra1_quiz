@@ -1,0 +1,221 @@
+body {
+  /* Global styles for the body */
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color:#f0f0f0;
+  color: #333;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+  margin: 0; 
+}
+ 
+/* Styles for the introductory section */
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styles for different sections of the introductory container */
+.intro-left {
+  flex: 1;
+}
+
+.intro-logo {
+  max-width: 100%;
+}
+
+.intro-right {
+  flex: 2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro-right > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Button styles for start and next buttons */
+.start-button, .next-button {
+  background-color:  #238c99;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.start-button:hover, .next-button:hover {
+  background-color:#1a737c;
+  transform: scale(1.05); 
+}
+
+/* Styles for answer options */
+.answer-options {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styles for the list of answer options */
+.answer-options li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  list-style: none;
+  font-size: 1.2rem;
+
+}
+
+/* Styles for the main question container */
+.question-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  border: 2px solid #ccc; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  padding: 20px; 
+  margin: 0 auto; 
+  width: 600px; 
+ 
+  border-radius: 5px; 
+  color: #000;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.question-container h2 {
+  margin-bottom: 1rem !important;
+}
+
+.score-container {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin: 5px auto;
+
+}
+
+.score {
+  font-size: 1.5rem;
+}
+.question-number {
+  font-size: 14px;
+  color: #333; /* You can replace this with your desired color */
+}
+
+/* Start Over Button */
+.start-over-button {
+  background-color:  #238c99;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.start-over-button:hover {
+  background-color: #ff6347;
+  transform: scale(1.05); /* Add a subtle scale effect on hover */
+}
+
+ /* Styles for answer feedback section */
+.answer-feedback {
+  margin-top: 10px;
+}
+
+ /* Styles for correct and incorrect messages */
+.correct-message {
+  color: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.incorrect-message {
+  color: tomato;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Styles fo error message */
+.error-message{
+  color: darkorange;
+  font-weight: bold;
+}
+
+/* Responsive design for small screens 450px to 768px */
+@media (max-width: 450px) {
+  /* Media query styles for screens with a maximum width of 768px */
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-left {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .intro-logo {
+    max-width: 80%;
+  }
+
+  .question-container h2 {
+    font-size: 15px;
+}
+
+  .question-container {
+    width: 350px; 
+    /* width: 85vw; */
+    margin: 0 10px; /* Add margin to the right and left */
+    padding: 10px;
+        
+  }
+  .question-container h2 {
+    font-size: 1.2rem;
+  }
+/* Add a block display for math expressions on smaller screens */
+  .question-container {
+    display: block;
+  }
+
+/* Additional adjustments for other elements as needed */
+  .answer-option {
+      font-size: 14px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .answer-options li {
+    font-size: 1.2rem;
+  }
+}
