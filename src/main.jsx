@@ -6,9 +6,9 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/algebra1_quiz">
     <Routes>
-        <Route path="*" element={ <App /> }>
+        <Route path="/algebra1_quiz" element={ <App /> }>
         </Route>
       </Routes>
     </BrowserRouter>
