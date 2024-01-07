@@ -11,8 +11,8 @@ function App() {
     
     
       <Routes>
-        <Route exact path="/" element={<Intro />} />
-        <Route exact path="/quiz" element={<Question />} />
+        <Route path="/" element={<Intro />} />
+        <Route path="/quiz" element={<Question />} />
         {/* <Route path="/quiz" element={<Question score={this.state.scores} />} /> */}
 
       </Routes>
